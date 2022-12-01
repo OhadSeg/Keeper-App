@@ -9,7 +9,7 @@ function CreateArea(props) {
     
     function handleChange(event){
        
-        const { name, value } = event.target;
+       const { name, value } = event.target;
        setNote(prevValue => {
         return {
           ...prevValue,
@@ -25,6 +25,10 @@ function CreateArea(props) {
         content: ""
       });
       event.preventDefault();
+    }
+
+    function deleteNote(event){
+      
     }
     
     return (
